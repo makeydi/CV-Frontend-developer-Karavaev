@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, serif;
+}
+
+.container {
+    width: 1200px;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+    
+.personal-data-container {
+    background-color: rgb(214, 210, 205);
+    width: 25%;
+    min-width: 100px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.font {
+    font-weight: 900;
+}
+
+h4 {
+    font-weight: 900;
+}
+
+.professional-data-container {
+    background-color: rgb(255, 251, 246);
+    padding: 2%;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.photo {
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 230px;
+}
+
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 48;
+     margin-right: 10px;
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+ }
+
+ a {
+     align-items: center;
+     color: black;
+     height: 20px;
+     padding-left: 30px;
+     position: relative;
+ }
+
+ a:hover {
+     color: indianred;
+ }
+
+ .skype {
+     position: absolute;
+     left: -3px;
+     bottom: -3px;
+ }
+
+ .git {
+     margin-right: 1px;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+ }
+
+@media (max-width:1200px) {
+    .container {
+        max-width:970px;
+     }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width:750px;
+     }
+    .personal-data-container {
+        padding-left: 20px;
+    }
+}   
+
+@media (max-width:767px) {
+        .container {
+            max-width: 375px;;
+            flex-direction: column ;
+            align-items: center;
+        }
+
+        .personal-data-container {
+            width: 100%;
+            height: max-content;
+            justify-content: center ;
+            align-items: center;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+
+        .professional-data-container {
+            width: 100%;
+        }  
+    }
+
+h2 {
+    border-bottom: 2px solid rgb(219, 211, 211);
+    padding-bottom: 4px;
+}
+
+span.date {
+    float: right;
+    font-size: 13px;
+}
+
+h5 {
+    padding-top: 20px;
+    font-size: 14px;
+}
