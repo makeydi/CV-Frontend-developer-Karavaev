@@ -10,6 +10,7 @@ body {
     margin: auto;
     box-sizing: border-box;
     padding: 5px;
+    line-height: 20px;
 }
     
 .personal-data-container {
